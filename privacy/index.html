@@ -19,8 +19,10 @@
       border-radius: 14px;
       padding: 28px;
     }
-    a { color: #777; text-decoration: none; }
+
+    a { color: #2f6f5f; text-decoration: none; }
     a:hover { text-decoration: underline; }
+
     header {
       display: flex;
       align-items: center;
@@ -34,9 +36,76 @@
     }
     h1 { margin: 0; font-size: 22px; }
     .meta { color: #666; font-size: 14px; margin-top: 6px; }
-    footer { margin-top: 22px; font-size: 14px; color: #777; }
-    footer a { margin-right: 12px; }
-    main { line-height: 1.6; color: #222; }
+
+    main { line-height: 1.65; color: #222; }
+
+    main h2 {
+      margin: 22px 0 10px;
+      font-size: 18px;
+      color: #111;
+    }
+    main h3 {
+      margin: 14px 0 8px;
+      font-size: 15px;
+      color: #111;
+    }
+    main p {
+      margin: 10px 0;
+      color: #333;
+    }
+    main ul {
+      margin: 8px 0 12px 20px;
+      padding: 0;
+    }
+    main li {
+      margin: 6px 0;
+    }
+    .note {
+      background: #f7f7f7;
+      border: 1px solid #eee;
+      padding: 12px 14px;
+      border-radius: 10px;
+      color: #444;
+      margin: 12px 0;
+    }
+    .contact {
+      display: inline-flex;
+      gap: 8px;
+      align-items: center;
+      padding: 10px 12px;
+      border: 1px solid #eee;
+      border-radius: 10px;
+      background: #fafafa;
+      margin-top: 6px;
+    }
+    .contact a { color: #111; font-weight: 600; }
+
+    .badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin: 8px 0 0;
+    }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      border: 1px solid #eee;
+      background: #fafafa;
+      padding: 8px 10px;
+      border-radius: 999px;
+      font-size: 13px;
+      color: #333;
+    }
+
+    footer {
+      margin-top: 22px;
+      font-size: 14px;
+      color: #777;
+      border-top: 1px solid #eee;
+      padding-top: 14px;
+    }
+    footer a { margin-right: 12px; color: #777; }
   </style>
 </head>
 <body>
@@ -45,104 +114,174 @@
       <img src="../assets/icon_app.png" alt="Ícone do app Bíblia Diária">
       <div>
         <h1>Política de Privacidade</h1>
-        <div class="meta">Bíblia Diária</div>
+        <div class="meta">Bíblia Diária • Última atualização: Janeiro/2026</div>
       </div>
     </header>
 
     <main>
-      Política de Privacidade – Bíblia Diária
-Última atualização: Janeiro/2026
-A sua privacidade é importante para nós. Esta Política de Privacidade descreve como o aplicativo Bíblia Diária (“Aplicativo”) coleta, utiliza e protege as informações dos usuários.
-O responsável pelo tratamento dos dados é Thiago Weber, com sede em Florianópolis – SC, Brasil.
-📧 Contato: contato@bibliadiaria.app
-Ao utilizar o Aplicativo, você concorda com esta Política.
+      <p>
+        A sua privacidade é importante para nós. Esta Política de Privacidade descreve como o aplicativo
+        <strong>Bíblia Diária</strong> (“Aplicativo”) coleta, utiliza e protege as informações dos usuários.
+      </p>
 
-1. Dados que coletamos
-O Bíblia Diária coleta apenas o mínimo necessário para funcionamento do aplicativo e da assinatura Premium.
-1.1 Dados fornecidos pelo usuário (opcionais)
-Durante o uso do Aplicativo, você pode informar dados opcionais, como:
-Preferências de conteúdo (ex.: categorias, temas)
-Configurações de notificações (frequência e horários)
-Preferências visuais (tema, cores, idioma)
-Esses dados são utilizados exclusivamente para personalização da experiência dentro do aplicativo.
-O Bíblia Diária não exige nome, e-mail, telefone ou documentos para uso do app.
+      <p>
+        O responsável pelo tratamento dos dados é <strong>Thiago Weber</strong>, com sede em Florianópolis – SC, Brasil.
+      </p>
 
-1.2 Dados técnicos básicos
-Podemos coletar automaticamente informações técnicas essenciais, como:
-Tipo de dispositivo
-Sistema operacional
-Idioma do sistema
-Identificadores técnicos do aplicativo (não diretamente identificáveis)
-Esses dados são usados para garantir o funcionamento correto do app e compatibilidade com o dispositivo.
+      <div class="contact">
+        <span>📧</span>
+        <a href="mailto:contato@bibliadiaria.app">contato@bibliadiaria.app</a>
+      </div>
 
-2. Assinaturas e pagamentos (RevenueCat)
-As assinaturas Premium do Bíblia Diária são gerenciadas por meio do serviço RevenueCat, utilizado exclusivamente para:
-Verificar o status da assinatura do usuário
-Gerenciar renovações e restaurações de compra
-Garantir acesso correto aos recursos Premium
-O RevenueCat não fornece ao desenvolvedor dados sensíveis de pagamento, como número de cartão ou informações bancárias.
-Os pagamentos são processados diretamente pelas lojas:
-Apple App Store
-Google Play Store
-Para mais informações, consulte a política de privacidade do RevenueCat:
-https://www.revenuecat.com/privacy/
+      <p class="note">
+        Ao utilizar o Aplicativo, você concorda com esta Política.
+      </p>
 
-3. Como usamos os dados
-Utilizamos os dados coletados para:
-Personalizar o conteúdo exibido no Aplicativo
-Manter o funcionamento correto das assinaturas Premium
-Garantir estabilidade e segurança do app
-Prestar suporte quando o usuário entra em contato
-O Bíblia Diária:
-❌ não vende dados
-❌ não compartilha dados para publicidade
-❌ não cria perfis comerciais de usuários
+      <h2>1. Dados que coletamos</h2>
+      <p>
+        O Bíblia Diária coleta apenas o mínimo necessário para funcionamento do aplicativo e da assinatura Premium.
+      </p>
 
-4. Base legal para o tratamento (LGPD)
-O tratamento de dados ocorre com base em:
-Execução do serviço: para entregar as funcionalidades do aplicativo
-Legítimo interesse: para manter o funcionamento e segurança do app
-Consentimento: quando aplicável (ex.: permissões do sistema, como notificações)
+      <h3>1.1 Dados fornecidos pelo usuário (opcionais)</h3>
+      <p>Durante o uso do Aplicativo, você pode informar dados opcionais, como:</p>
+      <ul>
+        <li>Preferências de conteúdo (ex.: categorias, temas)</li>
+        <li>Configurações de notificações (frequência e horários)</li>
+        <li>Preferências visuais (tema, cores, idioma)</li>
+      </ul>
+      <p>Esses dados são utilizados exclusivamente para personalização da experiência dentro do aplicativo.</p>
+      <p class="note">
+        O Bíblia Diária não exige nome, e-mail, telefone ou documentos para uso do app.
+      </p>
 
-5. Notificações
-O Aplicativo pode enviar notificações push com versículos e mensagens bíblicas, somente se o usuário autorizar.
-Você pode desativar as notificações a qualquer momento nas configurações do seu dispositivo.
+      <h3>1.2 Dados técnicos básicos</h3>
+      <p>Podemos coletar automaticamente informações técnicas essenciais, como:</p>
+      <ul>
+        <li>Tipo de dispositivo</li>
+        <li>Sistema operacional</li>
+        <li>Idioma do sistema</li>
+        <li>Identificadores técnicos do aplicativo (não diretamente identificáveis)</li>
+      </ul>
+      <p>
+        Esses dados são usados para garantir o funcionamento correto do app e compatibilidade com o dispositivo.
+      </p>
 
-6. Compartilhamento de dados
-Compartilhamos dados apenas quando estritamente necessário para:
-Operação da assinatura Premium (RevenueCat)
-Cumprimento de obrigações legais
-Não compartilhamos dados com anunciantes ou terceiros para fins comerciais.
+      <h2>2. Assinaturas e pagamentos (RevenueCat)</h2>
+      <p>
+        As assinaturas Premium do Bíblia Diária são gerenciadas por meio do serviço <strong>RevenueCat</strong>,
+        utilizado exclusivamente para:
+      </p>
+      <ul>
+        <li>Verificar o status da assinatura do usuário</li>
+        <li>Gerenciar renovações e restaurações de compra</li>
+        <li>Garantir acesso correto aos recursos Premium</li>
+      </ul>
 
-7. Armazenamento e segurança
-Adotamos medidas técnicas e organizacionais adequadas para proteger as informações dos usuários contra acesso não autorizado, perda, alteração ou uso indevido.
-Os dados são mantidos apenas pelo tempo necessário para cumprir as finalidades descritas nesta Política.
+      <p class="note">
+        O RevenueCat não fornece ao desenvolvedor dados sensíveis de pagamento, como número de cartão ou informações bancárias.
+      </p>
 
-8. Dados de menores
-O Bíblia Diária não é direcionado especificamente a crianças. Caso um responsável legal identifique uso indevido por menor de idade, pode entrar em contato para orientações ou solicitação de remoção de dados.
-📧 contato@bibliadiaria.app
+      <p>Os pagamentos são processados diretamente pelas lojas:</p>
+      <div class="badges">
+        <span class="badge"> Apple App Store</span>
+        <span class="badge">▶ Google Play Store</span>
+      </div>
 
-9. Direitos do usuário (LGPD)
-Você pode solicitar, a qualquer momento:
-Confirmação de tratamento e acesso aos dados
-Correção de dados
-Exclusão de dados (quando aplicável)
-Revogação de consentimento
-As solicitações devem ser enviadas para:
-📧 contato@bibliadiaria.app
+      <p>
+        Para mais informações, consulte a política de privacidade do RevenueCat:
+        <a href="https://www.revenuecat.com/privacy/" target="_blank" rel="noopener">https://www.revenuecat.com/privacy/</a>
+      </p>
 
-10. Transferência internacional de dados
-O serviço RevenueCat pode processar dados em servidores localizados fora do Brasil. Nesses casos, adotam-se medidas adequadas de proteção, conforme permitido pela legislação aplicável.
+      <h2>3. Como usamos os dados</h2>
+      <p>Utilizamos os dados coletados para:</p>
+      <ul>
+        <li>Personalizar o conteúdo exibido no Aplicativo</li>
+        <li>Manter o funcionamento correto das assinaturas Premium</li>
+        <li>Garantir estabilidade e segurança do app</li>
+        <li>Prestar suporte quando o usuário entra em contato</li>
+      </ul>
 
-11. Alterações nesta Política
-Esta Política pode ser atualizada periodicamente. Em caso de alterações relevantes, o usuário será informado por meio do Aplicativo. A data de atualização será sempre revisada.
+      <p>O Bíblia Diária:</p>
+      <ul>
+        <li>❌ não vende dados</li>
+        <li>❌ não compartilha dados para publicidade</li>
+        <li>❌ não cria perfis comerciais de usuários</li>
+      </ul>
 
-12. Contato
-Dúvidas sobre esta Política de Privacidade?
-📧 contato@bibliadiaria.app
-Responsável: Thiago Weber
-Florianópolis – SC, Brasil
+      <h2>4. Base legal para o tratamento (LGPD)</h2>
+      <p>O tratamento de dados ocorre com base em:</p>
+      <ul>
+        <li><strong>Execução do serviço</strong>: para entregar as funcionalidades do aplicativo</li>
+        <li><strong>Legítimo interesse</strong>: para manter o funcionamento e segurança do app</li>
+        <li><strong>Consentimento</strong>: quando aplicável (ex.: permissões do sistema, como notificações)</li>
+      </ul>
 
+      <h2>5. Notificações</h2>
+      <p>
+        O Aplicativo pode enviar notificações push com versículos e mensagens bíblicas, somente se o usuário autorizar.
+        Você pode desativar as notificações a qualquer momento nas configurações do seu dispositivo.
+      </p>
+
+      <h2>6. Compartilhamento de dados</h2>
+      <p>Compartilhamos dados apenas quando estritamente necessário para:</p>
+      <ul>
+        <li>Operação da assinatura Premium (RevenueCat)</li>
+        <li>Cumprimento de obrigações legais</li>
+      </ul>
+      <p class="note">
+        Não compartilhamos dados com anunciantes ou terceiros para fins comerciais.
+      </p>
+
+      <h2>7. Armazenamento e segurança</h2>
+      <p>
+        Adotamos medidas técnicas e organizacionais adequadas para proteger as informações dos usuários contra acesso não autorizado,
+        perda, alteração ou uso indevido.
+      </p>
+      <p>
+        Os dados são mantidos apenas pelo tempo necessário para cumprir as finalidades descritas nesta Política.
+      </p>
+
+      <h2>8. Dados de menores</h2>
+      <p>
+        O Bíblia Diária não é direcionado especificamente a crianças. Caso um responsável legal identifique uso indevido por menor de idade,
+        pode entrar em contato para orientações ou solicitação de remoção de dados:
+        <a href="mailto:contato@bibliadiaria.app">contato@bibliadiaria.app</a>.
+      </p>
+
+      <h2>9. Direitos do usuário (LGPD)</h2>
+      <p>Você pode solicitar, a qualquer momento:</p>
+      <ul>
+        <li>Confirmação de tratamento e acesso aos dados</li>
+        <li>Correção de dados</li>
+        <li>Exclusão de dados (quando aplicável)</li>
+        <li>Revogação de consentimento</li>
+      </ul>
+      <p>
+        As solicitações devem ser enviadas para:
+        <a href="mailto:contato@bibliadiaria.app">contato@bibliadiaria.app</a>.
+      </p>
+
+      <h2>10. Transferência internacional de dados</h2>
+      <p>
+        O serviço RevenueCat pode processar dados em servidores localizados fora do Brasil.
+        Nesses casos, adotam-se medidas adequadas de proteção, conforme permitido pela legislação aplicável.
+      </p>
+
+      <h2>11. Alterações nesta Política</h2>
+      <p>
+        Esta Política pode ser atualizada periodicamente. Em caso de alterações relevantes, o usuário será informado por meio do Aplicativo.
+        A data de atualização será sempre revisada.
+      </p>
+
+      <h2>12. Contato</h2>
+      <p>Dúvidas sobre esta Política de Privacidade?</p>
+      <div class="contact">
+        <span>📧</span>
+        <a href="mailto:contato@bibliadiaria.app">contato@bibliadiaria.app</a>
+      </div>
+      <p style="margin-top:10px; color:#666;">
+        Responsável: Thiago Weber • Florianópolis – SC, Brasil
+      </p>
     </main>
 
     <footer>
