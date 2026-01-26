@@ -19,8 +19,10 @@
       border-radius: 14px;
       padding: 28px;
     }
-    a { color: #777; text-decoration: none; }
+
+    a { color: #2f6f5f; text-decoration: none; }
     a:hover { text-decoration: underline; }
+
     header {
       display: flex;
       align-items: center;
@@ -34,9 +36,66 @@
     }
     h1 { margin: 0; font-size: 22px; }
     .meta { color: #666; font-size: 14px; margin-top: 6px; }
-    footer { margin-top: 22px; font-size: 14px; color: #777; }
-    footer a { margin-right: 12px; }
-    main { line-height: 1.6; color: #222; }
+
+    main { line-height: 1.65; color: #222; }
+
+    main h2 {
+      margin: 22px 0 10px;
+      font-size: 18px;
+      color: #111;
+    }
+    main h3 {
+      margin: 14px 0 8px;
+      font-size: 15px;
+      color: #111;
+    }
+    main p {
+      margin: 10px 0;
+      color: #333;
+    }
+    main ul {
+      margin: 8px 0 12px 20px;
+      padding: 0;
+    }
+    main li {
+      margin: 6px 0;
+    }
+
+    .note {
+      background: #f7f7f7;
+      border: 1px solid #eee;
+      padding: 12px 14px;
+      border-radius: 10px;
+      color: #444;
+      margin: 12px 0;
+    }
+
+    .badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin: 8px 0 0;
+    }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      border: 1px solid #eee;
+      background: #fafafa;
+      padding: 8px 10px;
+      border-radius: 999px;
+      font-size: 13px;
+      color: #333;
+    }
+
+    footer {
+      margin-top: 22px;
+      font-size: 14px;
+      color: #777;
+      border-top: 1px solid #eee;
+      padding-top: 14px;
+    }
+    footer a { margin-right: 12px; color: #777; }
   </style>
 </head>
 <body>
@@ -45,105 +104,170 @@
       <img src="../assets/icon_app.png" alt="Ícone do app Bíblia Diária">
       <div>
         <h1>Termos de Uso</h1>
-        <div class="meta">Bíblia Diária</div>
+        <div class="meta">Bíblia Diária • Última atualização: Janeiro/2026</div>
       </div>
     </header>
 
     <main>
-      Termos de Uso – Bíblia Diária
-Última atualização: Janeiro/2026
-1. Informações gerais
-Estes Termos de Uso regulam o acesso e a utilização do aplicativo Bíblia Diária (“Aplicativo”), desenvolvido por Thiago Weber, com sede em Florianópolis – SC, Brasil.
-Ao utilizar o Aplicativo, o usuário declara que leu, compreendeu e concorda integralmente com estes Termos de Uso.
-Caso não concorde com qualquer condição aqui descrita, o usuário deve interromper imediatamente o uso do Aplicativo.
+      <p>
+        Estes Termos de Uso regulam o acesso e a utilização do aplicativo <strong>Bíblia Diária</strong> (“Aplicativo”),
+        desenvolvido por <strong>Thiago Weber</strong>, com sede em Florianópolis – SC, Brasil.
+      </p>
 
-2. Sobre o Bíblia Diária
-O Bíblia Diária é um aplicativo de conteúdo cristão que oferece:
-Versículos bíblicos
-Frases e reflexões religiosas
-Conteúdo diário exibido em feed
-Widgets (conforme permissões do sistema)
-Notificações com mensagens bíblicas e espirituais
-O Aplicativo tem finalidade informativa, reflexiva e espiritual, não substituindo orientação religiosa presencial, aconselhamento pastoral, psicológico, médico ou profissional.
+      <p class="note">
+        Ao utilizar o Aplicativo, o usuário declara que leu, compreendeu e concorda integralmente com estes Termos de Uso.
+        Caso não concorde com qualquer condição aqui descrita, deve interromper imediatamente o uso do Aplicativo.
+      </p>
 
-3. Elegibilidade do usuário
-O uso do Aplicativo é permitido apenas a usuários que:
-Possuam capacidade legal para aceitar estes Termos
-Tenham idade mínima exigida pela legislação de seu país
-Caso seja identificado o uso por menor de idade sem autorização legal, o desenvolvedor poderá suspender ou encerrar o acesso.
+      <h2>1. Informações gerais</h2>
+      <p>
+        Estes Termos de Uso e a Política de Privacidade se aplicam a todos os usuários do Aplicativo.
+        O uso continuado após atualizações destes Termos indica concordância com a versão vigente.
+      </p>
 
-4. Aceitação dos Termos
-O acesso, download ou uso do Aplicativo implica na aceitação automática destes Termos de Uso e da Política de Privacidade.
-Os Termos podem ser atualizados periodicamente. O uso contínuo do Aplicativo após alterações implica concordância com a versão vigente.
+      <h2>2. Sobre o Bíblia Diária</h2>
+      <p>O Bíblia Diária é um aplicativo de conteúdo cristão que oferece:</p>
+      <ul>
+        <li>Versículos bíblicos</li>
+        <li>Frases e reflexões religiosas</li>
+        <li>Conteúdo diário exibido em feed</li>
+        <li>Widgets (conforme permissões do sistema)</li>
+        <li>Notificações com mensagens bíblicas e espirituais</li>
+      </ul>
 
-5. Versão gratuita e versão Premium
-O Bíblia Diária oferece:
-🔹 Versão gratuita
-Acesso limitado ao conteúdo disponível no Aplicativo.
-🔹 Versão Premium
-Acesso completo ao conteúdo e funcionalidades exclusivas.
-A versão Premium é oferecida por meio de assinatura anual, conforme exibido no Aplicativo.
+      <p class="note">
+        O Aplicativo tem finalidade informativa, reflexiva e espiritual, não substituindo orientação religiosa presencial,
+        aconselhamento pastoral, psicológico, médico ou profissional.
+      </p>
 
-6. Assinaturas, pagamentos e cancelamento
-As assinaturas são processadas exclusivamente pela Apple App Store ou Google Play Store.
-O desenvolvedor não tem acesso aos dados de pagamento do usuário.
-O valor, período e condições da assinatura são informados antes da confirmação da compra.
-A assinatura é renovada automaticamente, salvo cancelamento pelo usuário.
-Cancelamento
-O usuário pode cancelar sua assinatura a qualquer momento diretamente nas configurações da loja (Apple ou Google).
-O cancelamento passa a valer ao final do período vigente.
+      <h2>3. Elegibilidade do usuário</h2>
+      <p>O uso do Aplicativo é permitido apenas a usuários que:</p>
+      <ul>
+        <li>Possuam capacidade legal para aceitar estes Termos</li>
+        <li>Tenham idade mínima exigida pela legislação de seu país</li>
+      </ul>
+      <p>
+        Caso seja identificado o uso por menor de idade sem autorização legal, o desenvolvedor poderá suspender ou encerrar o acesso.
+      </p>
 
-7. Direito de arrependimento
-Nos termos da legislação aplicável, o usuário reconhece que o fornecimento de conteúdo digital se inicia imediatamente após a confirmação da compra.
-Assim, não é possível exercer o direito de arrependimento após o início do acesso ao conteúdo Premium.
+      <h2>4. Aceitação dos Termos</h2>
+      <p>
+        O acesso, download ou uso do Aplicativo implica na aceitação automática destes Termos de Uso e da Política de Privacidade.
+      </p>
+      <p>
+        Os Termos podem ser atualizados periodicamente. O uso contínuo do Aplicativo após alterações implica concordância com a versão vigente.
+      </p>
 
-8. Responsabilidades do usuário
-O usuário se compromete a:
-Utilizar o Aplicativo apenas para fins pessoais e lícitos
-Não copiar, redistribuir ou comercializar o conteúdo
-Não utilizar o Aplicativo de forma abusiva ou fraudulenta
-Respeitar direitos de propriedade intelectual
-O uso indevido pode resultar na suspensão ou encerramento do acesso, sem direito a reembolso.
+      <h2>5. Versão gratuita e versão Premium</h2>
+      <p>O Bíblia Diária oferece:</p>
 
-9. Limitação de responsabilidade
-O Bíblia Diária é fornecido “no estado em que se encontra”.
-O desenvolvedor não se responsabiliza por:
-Interpretações pessoais do conteúdo religioso
-Decisões tomadas com base nas mensagens exibidas
-Falhas técnicas, interrupções ou indisponibilidades temporárias
-Danos indiretos ou lucros cessantes
-O uso do Aplicativo é de inteira responsabilidade do usuário.
+      <h3>5.1 Versão gratuita</h3>
+      <p>Acesso limitado ao conteúdo disponível no Aplicativo.</p>
 
-10. Propriedade intelectual
-Todo o conteúdo disponibilizado no Aplicativo, incluindo textos, layout, identidade visual e funcionalidades, é protegido por direitos autorais e pertence ao desenvolvedor ou a seus respectivos licenciadores.
-É proibida a reprodução ou distribuição sem autorização expressa.
+      <h3>5.2 Versão Premium</h3>
+      <p>
+        Acesso completo ao conteúdo e funcionalidades exclusivas. A versão Premium é oferecida por meio de
+        <strong>assinatura anual</strong>, conforme exibido no Aplicativo.
+      </p>
 
-11. Encerramento de conta e acesso
-O usuário pode solicitar a exclusão de sua conta e dados por meio do e-mail de contato.
-O desenvolvedor poderá suspender ou encerrar o acesso ao Aplicativo em caso de violação destes Termos.
+      <h2>6. Assinaturas, pagamentos e cancelamento</h2>
+      <p>As assinaturas são processadas exclusivamente pelas lojas:</p>
+      <div class="badges">
+        <span class="badge"> Apple App Store</span>
+        <span class="badge">▶ Google Play Store</span>
+      </div>
 
-12. Alterações no Aplicativo
-O Bíblia Diária pode ser atualizado, modificado ou descontinuado a qualquer momento, visando melhorias técnicas ou de experiência do usuário, sem obrigação de aviso prévio.
+      <ul>
+        <li>O desenvolvedor não tem acesso aos dados de pagamento do usuário.</li>
+        <li>O valor, período e condições da assinatura são informados antes da confirmação da compra.</li>
+        <li>A assinatura é renovada automaticamente, salvo cancelamento pelo usuário.</li>
+      </ul>
 
-13. Lei aplicável e foro
-Estes Termos são regidos pelas leis da República Federativa do Brasil, incluindo a Lei Geral de Proteção de Dados (LGPD) e o Código de Defesa do Consumidor.
-Eventuais controvérsias serão resolvidas conforme a legislação brasileira.
+      <h3>6.1 Cancelamento</h3>
+      <p>
+        O usuário pode cancelar sua assinatura a qualquer momento diretamente nas configurações da loja (Apple ou Google).
+        O cancelamento passa a valer ao final do período vigente.
+      </p>
 
-14. Contato
-Em caso de dúvidas, sugestões ou solicitações, entre em contato:
-📧 contato@bibliadiaria.app
+      <h2>7. Direito de arrependimento</h2>
+      <p>
+        Nos termos da legislação aplicável, o usuário reconhece que o fornecimento de conteúdo digital se inicia imediatamente
+        após a confirmação da compra. Assim, não é possível exercer o direito de arrependimento após o início do acesso ao conteúdo Premium.
+      </p>
 
-15. Termos adicionais exigidos pela Apple (iOS)
-As cláusulas abaixo aplicam-se exclusivamente aos usuários que utilizam o Aplicativo em dispositivos Apple:
-O presente contrato é celebrado entre o usuário e o desenvolvedor do Aplicativo, não envolvendo a Apple Inc.
-A Apple não é responsável pelo Aplicativo, seu conteúdo ou suporte técnico.
-A licença concedida é pessoal, não transferível e limitada ao uso do Aplicativo em dispositivos Apple de propriedade do usuário, conforme as Regras de Uso dos Serviços de Mídia da Apple.
-O desenvolvedor é o único responsável pela manutenção, suporte e eventuais reclamações relacionadas ao Aplicativo.
-Em caso de falha do Aplicativo em cumprir garantias legais, o usuário poderá notificar a Apple, que poderá reembolsar o valor pago, se aplicável.
-O desenvolvedor é responsável por quaisquer reivindicações relacionadas a propriedade intelectual, conformidade legal ou uso do Aplicativo.
-O usuário declara que não se encontra em país sujeito a embargo dos Estados Unidos nem consta em listas de partes restritas.
-A Apple e suas subsidiárias são beneficiárias terceiras destes Termos e poderão fazê-los cumprir.
+      <h2>8. Responsabilidades do usuário</h2>
+      <p>O usuário se compromete a:</p>
+      <ul>
+        <li>Utilizar o Aplicativo apenas para fins pessoais e lícitos</li>
+        <li>Não copiar, redistribuir ou comercializar o conteúdo</li>
+        <li>Não utilizar o Aplicativo de forma abusiva ou fraudulenta</li>
+        <li>Respeitar direitos de propriedade intelectual</li>
+      </ul>
+      <p class="note">
+        O uso indevido pode resultar na suspensão ou encerramento do acesso, sem direito a reembolso.
+      </p>
 
+      <h2>9. Limitação de responsabilidade</h2>
+      <p>O Bíblia Diária é fornecido “no estado em que se encontra”. O desenvolvedor não se responsabiliza por:</p>
+      <ul>
+        <li>Interpretações pessoais do conteúdo religioso</li>
+        <li>Decisões tomadas com base nas mensagens exibidas</li>
+        <li>Falhas técnicas, interrupções ou indisponibilidades temporárias</li>
+        <li>Danos indiretos ou lucros cessantes</li>
+      </ul>
+      <p>O uso do Aplicativo é de inteira responsabilidade do usuário.</p>
+
+      <h2>10. Propriedade intelectual</h2>
+      <p>
+        Todo o conteúdo disponibilizado no Aplicativo, incluindo textos, layout, identidade visual e funcionalidades,
+        é protegido por direitos autorais e pertence ao desenvolvedor ou a seus respectivos licenciadores.
+      </p>
+      <p>É proibida a reprodução ou distribuição sem autorização expressa.</p>
+
+      <h2>11. Encerramento de conta e acesso</h2>
+      <p>
+        O usuário pode solicitar a exclusão de sua conta e dados por meio do e-mail de contato.
+        O desenvolvedor poderá suspender ou encerrar o acesso ao Aplicativo em caso de violação destes Termos.
+      </p>
+
+      <h2>12. Alterações no Aplicativo</h2>
+      <p>
+        O Bíblia Diária pode ser atualizado, modificado ou descontinuado a qualquer momento, visando melhorias técnicas ou
+        de experiência do usuário, sem obrigação de aviso prévio.
+      </p>
+
+      <h2>13. Lei aplicável e foro</h2>
+      <p>
+        Estes Termos são regidos pelas leis da República Federativa do Brasil, incluindo a Lei Geral de Proteção de Dados (LGPD)
+        e o Código de Defesa do Consumidor. Eventuais controvérsias serão resolvidas conforme a legislação brasileira.
+      </p>
+
+      <h2>14. Contato</h2>
+      <p>Em caso de dúvidas, sugestões ou solicitações, entre em contato:</p>
+      <p class="note">📧 <a href="mailto:contato@bibliadiaria.app">contato@bibliadiaria.app</a></p>
+
+      <h2>15. Termos adicionais exigidos pela Apple (iOS)</h2>
+      <p>As cláusulas abaixo aplicam-se exclusivamente aos usuários que utilizam o Aplicativo em dispositivos Apple:</p>
+      <ul>
+        <li>O presente contrato é celebrado entre o usuário e o desenvolvedor do Aplicativo, não envolvendo a Apple Inc.</li>
+        <li>A Apple não é responsável pelo Aplicativo, seu conteúdo ou suporte técnico.</li>
+        <li>
+          A licença concedida é pessoal, não transferível e limitada ao uso do Aplicativo em dispositivos Apple de propriedade do usuário,
+          conforme as Regras de Uso dos Serviços de Mídia da Apple.
+        </li>
+        <li>O desenvolvedor é o único responsável pela manutenção, suporte e eventuais reclamações relacionadas ao Aplicativo.</li>
+        <li>
+          Em caso de falha do Aplicativo em cumprir garantias legais, o usuário poderá notificar a Apple, que poderá reembolsar o valor pago,
+          se aplicável.
+        </li>
+        <li>
+          O desenvolvedor é responsável por quaisquer reivindicações relacionadas a propriedade intelectual, conformidade legal ou uso do Aplicativo.
+        </li>
+        <li>O usuário declara que não se encontra em país sujeito a embargo dos Estados Unidos nem consta em listas de partes restritas.</li>
+        <li>
+          A Apple e suas subsidiárias são beneficiárias terceiras destes Termos e poderão fazê-los cumprir.
+        </li>
+      </ul>
     </main>
 
     <footer>
